@@ -1,0 +1,147 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".visualizarLanche"
+    android:orientation="vertical">
+
+
+    <androidx.cardview.widget.CardView
+        android:id="@+id/cardView"
+        android:layout_width="403dp"
+        android:layout_height="154dp"
+        android:layout_margin="10px"
+        app:cardCornerRadius="10dp"
+        app:cardElevation="10dp"
+        tools:layout_editor_absoluteX="4dp">
+
+
+        <LinearLayout
+            android:layout_width="420dp"
+            android:layout_height="match_parent"
+            android:orientation="horizontal"
+            android:padding="10dp">
+
+            <LinearLayout
+                android:layout_width="400dp"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+
+                <TextView
+                    android:id="@+id/nome"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="10dp"
+                    android:text="Nome"
+                    android:textColor="@color/design_default_color_error"
+                    android:textSize="26dp"
+                    android:textStyle="bold"></TextView>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal">
+
+                    <TextView
+                        android:layout_width="80dp"
+                        android:layout_height="wrap_content"
+                        android:layout_marginStart="10dp"
+                        android:backgroundTint="#FFFFFF"
+                        android:text="preço:"
+                        android:textColor="#FF0000"
+                        android:textStyle="bold"></TextView>
+
+                    <TextView
+                        android:id="@+id/preco"
+                        android:layout_width="283dp"
+                        android:layout_height="wrap_content"
+                        android:layout_marginStart="10dp"
+
+                        android:textStyle="bold"></TextView>
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginStart="10dp"
+                        android:text="ingredientes:"
+                        android:textColor="#FF0000"
+                        android:textStyle="bold"></TextView>
+
+                    <TextView
+                        android:id="@+id/ingredientes"
+                        android:layout_width="280dp"
+                        android:layout_height="match_parent"
+                        android:layout_marginStart="10dp"
+                        android:textStyle="bold"></TextView>
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginStart="10dp"
+                        android:text="Teor calórico:"
+                        android:textColor="#FF0000"
+                        android:textStyle="bold"></TextView>
+
+                    <TextView
+                        android:id="@+id/teor"
+                        android:layout_width="276dp"
+                        android:layout_height="match_parent"
+                        android:layout_marginStart="10dp"
+                        android:text=""
+                        android:textStyle="bold"></TextView>
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginStart="10dp"
+                        android:text="Tipo:"
+                        android:textColor="#FF0000"
+                        android:textStyle="bold"></TextView>
+
+                    <TextView
+                        android:id="@+id/tipo"
+                        android:layout_width="332dp"
+                        android:layout_height="match_parent"
+                        android:layout_marginStart="10dp"
+                        android:text=""
+                        android:textStyle="bold"></TextView>
+
+                    <TextView
+                        android:id="@+id/idd"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:text="TextView"
+                        android:visibility="invisible" />
+                </LinearLayout>
+
+
+            </LinearLayout>
+
+        </LinearLayout>
+
+
+    </androidx.cardview.widget.CardView>
+
+
+</LinearLayout>
